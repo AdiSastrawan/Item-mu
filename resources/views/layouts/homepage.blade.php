@@ -12,6 +12,7 @@
 
 <body>
     <livewire:navbar />
+    <livewire:hero-section />
     @livewireScripts
 </body>
 
