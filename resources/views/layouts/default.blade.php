@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
     @livewireStyles
-    <title>Homepage</title>
+    <title>Item-mu</title>
 </head>
 
 <body>
     <livewire:navbar />
-    <livewire:hero-section />
+    {{ $slot }}
     @livewireScripts
 </body>
 
