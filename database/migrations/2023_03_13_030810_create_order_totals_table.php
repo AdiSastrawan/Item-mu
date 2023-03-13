@@ -11,11 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('categories', function (Blueprint $table) {
+        Schema::create('order_totals', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->enum('type', ['mobile', 'desktop']);
-            $table->json('input_variant');
+            $table->foreignId('order_id')
+                ->constrained()
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
+            $table->unsignedDecimal('total_amount');
             $table->timestamps();
         });
     }
@@ -25,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('categories');
+        Schema::dropIfExists('order_totals');
     }
 };

@@ -19,7 +19,7 @@ return new class extends Migration
                 ->onDelete('cascade');
             $table->string('name');
             $table->boolean('status')->default(false);
-            $table->decimal("rating");
+            $table->decimal("rating")->default();
             $table->timestamps();
         });
     }
