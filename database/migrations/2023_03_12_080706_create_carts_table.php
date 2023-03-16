@@ -21,6 +21,7 @@ return new class extends Migration
                 ->constrained()
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
+            $table->text('order_information')->nullable();
             $table->unsignedInteger('amount');
             $table->timestamps();
         });
