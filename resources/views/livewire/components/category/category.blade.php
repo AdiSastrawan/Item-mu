@@ -1,4 +1,4 @@
-<div class="flex flex-col w-full justify-center lg:border lg:rounded-lg lg:w-[1000px] lg:mx-auto mb-5">
+<div class="relative flex flex-col w-full justify-center lg:border lg:rounded-lg lg:w-[1000px] lg:mx-auto mb-5">
     {{-- nav category --}}
     <ul class="flex overflow-x-auto scroll-smooth relative text-xs md:text-lg items-center md:justify-center md:max-w-5xl lg:w-[1000px] lg:static lg:justify-between lg:px-3 border-b-2">
         <li class="px-7 py-3 md:px-8 text-slate-800 hover:bg-gray-200">
