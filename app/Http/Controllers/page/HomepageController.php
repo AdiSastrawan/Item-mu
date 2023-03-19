@@ -11,6 +11,7 @@ class HomepageController extends Controller
     public function index()
     {
         $categories = Category::with("products")->get();
+
         return view('page.homepage', compact("categories"));
     }
 }

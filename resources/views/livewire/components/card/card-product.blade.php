@@ -1,16 +1,18 @@
-<div class="max-w-sm w-56  bg-white border flex-shrink-0 shadow-md my-2 drop-shadow-sm border-gray-200 rounded-lg  ">
+<div
+    class="max-w-sm w-36 md:w-56  bg-white border flex-shrink-0 shadow-md my-2 drop-shadow-sm border-gray-200 rounded-lg  ">
     <a href="#">
-        <img class="rounded-t-lg h-40 w-full object-cover"
+        <img class="rounded-t-lg h-24 md:h-40 w-full object-cover"
             src={{ $product->img != null ? $product->img : 'https://source.unsplash.com/random' }} alt="" />
     </a>
     <div class="p-5">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">{{ $product->name }}</h5>
+            <h5 class="mb-2 text-lg md:text-2xl font-bold tracking-tight text-gray-900 ">{{ $product->name }}</h5>
         </a>
         <p>{{ $product->category->name }}</p>
-        <p class="mb-3 font-normal text-gray-700 ">{{ 'Rp ' . number_format($product->price, 2, ',', '.') }}</p>
+        <p class="mb-3 font-normal text-sm md:text-base text-gray-700 ">
+            {{ 'Rp ' . number_format($product->price, 2, ',', '.') }}</p>
         <a href="#"
-            class="inline-flex space-x-2 items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            class="inline-flex space-x-2 items-center px-3 py-2 text-xs md:text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Add to cart
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                 <path
