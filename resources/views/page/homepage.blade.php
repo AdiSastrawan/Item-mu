@@ -1,5 +1,8 @@
 <x-default-layout>
     <livewire:hero-section />
+
+    <livewire:category />
+
     @foreach ($categories as $category)
         {{-- Testing json in blade --}}
         {{-- @if ($category->input_variant != null)
@@ -21,5 +24,6 @@
             <livewire:category-product :category="$category">
         @endif
     @endforeach
+
 
 </x-default-layout>
